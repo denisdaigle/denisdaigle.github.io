@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denis Daigle - Fractional CTO & AI Consultant</title>
-    <meta name="description" content="Fractional CTO helping B2B SaaS companies find $50K+ hiding in operations through strategic automation. 25+ years experience, bilingual (EN/FR).">
+    <title>Denis Daigle - Strategic Technology Partner for Growing Service Businesses</title>
+    <meta name="description" content="Not just another AI agency. I work with 3-5 healthcare, finance, and legal businesses as their strategic technology partner through 12-18 month transformation partnerships.">
     
     <style>
         * {
@@ -85,10 +85,19 @@
             align-items: center;
         }
 
+        .hero-label {
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #1e3a8a;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
         .hero-content h1 {
             font-size: 3rem;
             color: #1e3a8a;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             line-height: 1.2;
         }
 
@@ -96,23 +105,7 @@
             font-size: 1.25rem;
             color: #4b5563;
             margin-bottom: 2rem;
-        }
-
-        .hero-stats {
-            display: flex;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .stat {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .stat-icon {
-            width: 24px;
-            height: 24px;
+            line-height: 1.8;
         }
 
         .hero-image {
@@ -125,214 +118,260 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
-        /* Achievements Bar */
-        .achievements {
-            background: #1e3a8a;
+        /* Lead Magnet Banner */
+        .lead-magnet {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
             padding: 3rem 2rem;
             color: white;
+            text-align: center;
         }
 
-        .achievements-container {
-            max-width: 1200px;
+        .lead-magnet-container {
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        .achievements h2 {
-            text-align: center;
+        .lead-magnet h2 {
             font-size: 2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
 
-        .achievements-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 3rem;
-            text-align: center;
-        }
-
-        .achievement-item h3 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .achievement-item p {
+        .lead-magnet p {
             font-size: 1.125rem;
-            opacity: 0.9;
+            margin-bottom: 0.5rem;
+            opacity: 0.95;
         }
 
-        /* Problem Section */
-        .problem-section {
+        .lead-magnet ul {
+            list-style: none;
+            margin: 1.5rem 0;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .lead-magnet li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .lead-magnet li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .lead-magnet .cta-button {
+            background: white;
+            color: #1e3a8a;
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            margin-top: 1rem;
+        }
+
+        .lead-magnet .cta-button:hover {
+            background: #f3f4f6;
+        }
+
+        /* Three Dimensions Section */
+        .three-dimensions {
             max-width: 1200px;
             margin: 0 auto;
             padding: 5rem 2rem;
             text-align: center;
         }
 
-        .problem-section h2 {
-            font-size: 2.5rem;
+        .three-dimensions .section-label {
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            font-weight: 600;
             color: #1e3a8a;
-            margin-bottom: 3rem;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
         }
 
-        .problem-grid {
+        .three-dimensions h2 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+
+        .three-dimensions > p {
+            font-size: 1.25rem;
+            color: #6b7280;
+            margin-bottom: 4rem;
+        }
+
+        .dimensions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            text-align: left;
+        }
+
+        .dimension-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .dimension-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .dimension-card h3 {
+            color: #1e3a8a;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .dimension-card p {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+        }
+
+        .dimension-card ul {
+            margin-left: 1.5rem;
+            color: #4b5563;
+        }
+
+        .dimension-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Case Studies Section */
+        .case-studies {
+            background: #f3f4f6;
+            padding: 5rem 2rem;
+        }
+
+        .case-studies-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .case-studies h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+
+        .case-studies > p {
+            text-align: center;
+            font-size: 1.25rem;
+            color: #6b7280;
+            margin-bottom: 4rem;
+        }
+
+        .case-studies-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
 
-        .problem-card {
+        .case-study-card {
             background: white;
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: left;
         }
 
-        .problem-card h3 {
+        .case-study-card h3 {
             color: #1e3a8a;
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
 
-        .problem-card p {
+        .case-study-card p {
             color: #4b5563;
+            margin-bottom: 1rem;
             line-height: 1.8;
         }
 
-        /* Services Section */
-        .services {
-            background: #f3f4f6;
-            padding: 5rem 2rem;
+        .case-study-card .result {
+            background: #dbeafe;
+            padding: 1rem;
+            border-radius: 6px;
+            color: #1e3a8a;
+            font-weight: 600;
+            margin-top: 1rem;
         }
 
-        .services-container {
+        /* About Section */
+        .about {
             max-width: 1200px;
             margin: 0 auto;
-        }
-
-        .services h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #1e3a8a;
-            margin-bottom: 3rem;
-        }
-
-        .services-grid {
+            padding: 5rem 2rem;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 3rem;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: center;
         }
 
-        .service-card {
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .service-card h3 {
+        .about .section-label {
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            font-weight: 600;
             color: #1e3a8a;
-            font-size: 1.75rem;
+            letter-spacing: 1px;
             margin-bottom: 1rem;
         }
 
-        .service-card .includes {
-            margin: 1.5rem 0;
-        }
-
-        .service-card .includes h4 {
-            font-size: 1.125rem;
-            margin-bottom: 0.75rem;
+        .about h2 {
+            font-size: 2.5rem;
             color: #1e3a8a;
+            margin-bottom: 1.5rem;
         }
 
-        .service-card ul {
-            margin-left: 1.5rem;
+        .about p {
+            font-size: 1.125rem;
             color: #4b5563;
-        }
-
-        .service-card ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .service-card .pricing {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1e3a8a;
-            margin: 1.5rem 0;
-        }
-
-        /* Testimonial Section */
-        .testimonial {
-            background: #1e3a8a;
-            padding: 5rem 2rem;
-            color: white;
-        }
-
-        .testimonial-container {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .testimonial blockquote {
-            font-size: 1.5rem;
-            font-style: italic;
+            margin-bottom: 1.5rem;
             line-height: 1.8;
-            margin-bottom: 2rem;
         }
 
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .testimonial-author img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-        }
-
-        .author-info h4 {
-            font-size: 1.125rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .author-info p {
-            opacity: 0.8;
+        .about img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
         /* CTA Section */
         .cta-section {
-            max-width: 1200px;
-            margin: 0 auto;
+            background: #1e3a8a;
             padding: 5rem 2rem;
+            color: white;
             text-align: center;
         }
 
         .cta-section h2 {
             font-size: 2.5rem;
-            color: #1e3a8a;
             margin-bottom: 1rem;
         }
 
         .cta-section p {
             font-size: 1.25rem;
-            color: #4b5563;
             margin-bottom: 2rem;
+            opacity: 0.95;
         }
 
         .cta-buttons {
             display: flex;
             gap: 1rem;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         .cta-primary {
-            background: #1e3a8a;
-            color: white;
+            background: white;
+            color: #1e3a8a;
             padding: 1rem 2rem;
             border-radius: 6px;
             text-decoration: none;
@@ -342,13 +381,13 @@
         }
 
         .cta-primary:hover {
-            background: #1e40af;
+            background: #f3f4f6;
         }
 
         .cta-secondary {
-            background: white;
-            color: #1e3a8a;
-            border: 2px solid #1e3a8a;
+            background: transparent;
+            color: white;
+            border: 2px solid white;
             padding: 1rem 2rem;
             border-radius: 6px;
             text-decoration: none;
@@ -358,13 +397,13 @@
         }
 
         .cta-secondary:hover {
-            background: #1e3a8a;
-            color: white;
+            background: white;
+            color: #1e3a8a;
         }
 
         /* Footer */
         footer {
-            background: #1e3a8a;
+            background: #0f172a;
             color: white;
             padding: 3rem 2rem;
         }
@@ -384,7 +423,7 @@
 
         .footer-about p {
             opacity: 0.9;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         .footer-links h4 {
@@ -394,6 +433,10 @@
 
         .footer-links ul {
             list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
         }
 
         .footer-links a {
@@ -427,9 +470,12 @@
                 font-size: 2rem;
             }
 
-            .achievements-grid,
-            .problem-grid,
-            .services-grid {
+            .dimensions-grid,
+            .case-studies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about {
                 grid-template-columns: 1fr;
             }
 
@@ -449,182 +495,149 @@
         <nav>
             <div class="logo">Denis Daigle</div>
             <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#contact" class="cta-button">Book a Call</a>
+            <a href="https://tally.so/r/3X7a44" class="cta-button" target="_blank">Free Assessment</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Find $50K+ Hiding in Your Operations</h1>
-            <p>Fractional CTO helping B2B SaaS companies cut through AI hype and build automation that delivers real ROI.</p>
-            
-            <div class="hero-stats">
-                <div class="stat">
-                    <svg class="stat-icon" fill="#1e3a8a" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    <span>25+ Years Experience</span>
-                </div>
-                <div class="stat">
-                    <svg class="stat-icon" fill="#1e3a8a" viewBox="0 0 24 24"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-                    <span>Bilingual (EN/FR)</span>
-                </div>
-            </div>
-
-            <a href="#contact" class="cta-button" style="display: inline-block; margin-top: 1rem;">Schedule Discovery Call</a>
+            <div class="hero-label">With You All The Way</div>
+            <h1>Strategic Technology Partner for Growing Service Businesses</h1>
+            <p>Not just another AI Automation Agency — I work with 3-5 healthcare, finance, and legal businesses at a time as their strategic technology partner. This isn't project work. It's a 12-18 month transformation partnership, as you grow through your growth, alongside you.</p>
+            <a href="https://tally.so/r/3X7a44" class="cta-button" style="display: inline-block;" target="_blank">Get My FREE AI Opportunity Finder</a>
         </div>
 
         <div class="hero-image">
             <!-- Replace with your actual headshot -->
-            <img src="/assets/portrait.jpg" alt="Denis Daigle - Fractional CTO" onerror="this.src='https://via.placeholder.com/500x600/1e3a8a/ffffff?text=Your+Photo+Here'">
+            <img src="/assets/portrait.jpg" alt="Denis Daigle - Strategic Technology Partner" onerror="this.src='https://via.placeholder.com/500x600/1e3a8a/ffffff?text=Your+Photo+Here'">
         </div>
     </section>
 
-    <!-- Achievements Bar -->
-    <section class="achievements">
-        <div class="achievements-container">
-            <h2>Track Record</h2>
-            <div class="achievements-grid">
-                <div class="achievement-item">
-                    <h3>7 Years</h3>
-                    <p>CTO at Porpoise</p>
-                </div>
-                <div class="achievement-item">
-                    <h3>25+ Years</h3>
-                    <p>B2B SaaS Leadership</p>
-                </div>
-                <div class="achievement-item">
-                    <h3>$50K+</h3>
-                    <p>Average ROI Per Client</p>
-                </div>
+    <!-- Lead Magnet Banner -->
+    <section class="lead-magnet">
+        <div class="lead-magnet-container">
+            <h2>Is Your Tech Strategy Holding Back Your Growth?</h2>
+            <p>Take this free 3-minute Tech Readiness Assessment to discover how aligned your business, funding, and technology really are — and what to do next.</p>
+            <ul>
+                <li>Immediate Results - Get your personalized report instantly</li>
+                <li>Actionable Insights - Clear next steps for your business</li>
+                <li>No Tech Jargon - Business-focused recommendations</li>
+            </ul>
+            <p style="font-size: 0.875rem; margin-top: 1rem;">(Only 15 questions • Takes 3 minutes • 100% free)</p>
+            <a href="https://tally.so/r/3X7a44" class="cta-button" target="_blank">Take Free Readiness Assessment</a>
+        </div>
+    </section>
+
+    <!-- Three Dimensions Section -->
+    <section class="three-dimensions" id="approach">
+        <div class="section-label">Tech Strategy Partner</div>
+        <h2>One Partnership, Three Dimensions</h2>
+        <p>One integrated partnership with three dimensions that all happen together</p>
+
+        <div class="dimensions-grid">
+            <div class="dimension-card">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop" alt="Strategic Planning">
+                <h3>Strategic Planning</h3>
+                <p>As your Fractional CTO, I guide all major technology decisions: roadmaps, vendor selection, compliance planning</p>
+                <ul>
+                    <li>Technology roadmap and architecture design</li>
+                    <li>Vendor evaluation and selection</li>
+                    <li>Compliance and security planning</li>
+                    <li>Implementation oversight</li>
+                    <li>Team transition and knowledge transfer</li>
+                </ul>
+            </div>
+
+            <div class="dimension-card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Implementation Partnership">
+                <h3>Implementation Partnership</h3>
+                <p>I don't just advise from the sidelines—I build alongside you. Custom systems designed for YOUR specific business model</p>
+                <ul>
+                    <li>Privacy-first AI automation systems</li>
+                    <li>Canadian-hosted, HIPAA-compliant solutions</li>
+                    <li>Custom workflow optimization</li>
+                    <li>Integration with existing systems</li>
+                    <li>Training and ongoing support</li>
+                </ul>
+            </div>
+
+            <div class="dimension-card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=250&fit=crop" alt="Leadership Development">
+                <h3>Leadership Development</h3>
+                <p>As we work together, I coach you through the challenges of scaling a tech-enabled business</p>
+                <ul>
+                    <li>Strategic technology guidance</li>
+                    <li>Go-to-market strategy development</li>
+                    <li>Team building and hiring advice</li>
+                    <li>Funding and investor preparation</li>
+                    <li>Ongoing accountability and support</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Problem Section -->
-    <section class="problem-section">
-        <h2>You Don't Have an AI Problem,<br>You Have a Clarity Problem</h2>
-        <div class="problem-grid">
-            <div class="problem-card">
-                <h3>Too Many Options</h3>
-                <p>Your team wants to "use AI" but doesn't know where to start. Every vendor promises transformation. You're paralyzed by choice.</p>
-            </div>
-            <div class="problem-card">
-                <h3>Wrong Priorities</h3>
-                <p>You're automating what's easy, not what matters. Teams chase shiny tools instead of solving real bottlenecks that cost you money.</p>
-            </div>
-            <div class="problem-card">
-                <h3>No Clear ROI</h3>
-                <p>You've spent on AI tools but can't quantify the return. Pilots don't scale. Integrations break. Value remains theoretical.</p>
-            </div>
-        </div>
-    </section>
+    <!-- Case Studies Section -->
+    <section class="case-studies" id="case-studies">
+        <div class="case-studies-container">
+            <h2>Real Results from Real Clients</h2>
+            <p>See how strategic technology partnerships transform businesses across different industries</p>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="services-container">
-            <h2>How I Can Help</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Fractional CTO</h3>
-                    <p>2 days/week technical leadership for B2B SaaS companies who need senior guidance without full-time CTO costs.</p>
-                    
-                    <div class="includes">
-                        <h4>What's included:</h4>
-                        <ul>
-                            <li>Technical architecture & infrastructure strategy</li>
-                            <li>Engineering team hiring & management</li>
-                            <li>Product roadmap & technical feasibility</li>
-                            <li>PIPEDA/Law 25 compliance guidance</li>
-                        </ul>
+            <div class="case-studies-grid">
+                <div class="case-study-card">
+                    <h3>Pharmacy Entrepreneur Success</h3>
+                    <p>Guided an ambitious pharmacist from employee to confident tech-enabled business owner with franchise-ready systems.</p>
+                    <div class="result">
+                        Result: Successfully launched flagship pharmacy with scalable technology foundation
                     </div>
-
-                    <div class="pricing">$10,000/month</div>
-                    <p style="color: #6b7280; font-size: 0.875rem;">3-6 month engagements</p>
                 </div>
 
-                <div class="service-card">
-                    <h3>AI Opportunity Assessment</h3>
-                    <p>Find the $50K hiding in your operations through team interviews and customer journey mapping.</p>
-                    
-                    <div class="includes">
-                        <h4>What you get:</h4>
-                        <ul>
-                            <li>Team interviews to identify friction points</li>
-                            <li>3-5 automation opportunities ranked by ROI</li>
-                            <li>Implementation roadmap with cost estimates</li>
-                            <li>Technology recommendations</li>
-                        </ul>
+                <div class="case-study-card">
+                    <h3>Freedom by AI Documentation</h3>
+                    <p>Built privacy-first AI system that transformed a therapist's administrative burden into efficiency advantage.</p>
+                    <div class="result">
+                        Result: Recovered 180+ hours monthly across 4-therapist practice
                     </div>
-
-                    <div class="pricing">$2,500</div>
-                    <p style="color: #6b7280; font-size: 0.875rem;">2 weeks delivery</p>
                 </div>
 
-                <div class="service-card">
-                    <h3>Implementation Partner</h3>
-                    <p>Custom automation projects with training and handoff. Proven results with healthcare, legal, and financial services firms.</p>
-                    
-                    <div class="includes">
-                        <h4>Process:</h4>
-                        <ul>
-                            <li>Week 1-2: Discovery and technical design</li>
-                            <li>Week 3-6: Build and iterate</li>
-                            <li>Week 7-8: Training and handoff</li>
-                            <li>30 days post-launch support included</li>
-                        </ul>
+                <div class="case-study-card">
+                    <h3>Bookkeeper to SaaS Founder</h3>
+                    <p>Coached frustrated bookkeeper from idea to funded startup with working product and growing team.</p>
+                    <div class="result">
+                        Result: Provincial grants secured, team hired, early adopters onboarded
                     </div>
-
-                    <div class="pricing">$8K-15K</div>
-                    <p style="color: #6b7280; font-size: 0.875rem;">4-8 weeks delivery</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Workshop: Find the $50K</h3>
-                    <p>Live workshop teaching your team the 3-Phase Framework for identifying high-ROI automation opportunities.</p>
-                    
-                    <div class="includes">
-                        <h4>What's covered:</h4>
-                        <ul>
-                            <li>Inside-Out: Finding friction in operations</li>
-                            <li>Outside-In: Prioritizing by customer value</li>
-                            <li>Middle-Out: Implementing at leverage points</li>
-                            <li>Live Q&A and consulting session</li>
-                        </ul>
-                    </div>
-
-                    <div class="pricing">$1,500</div>
-                    <p style="color: #6b7280; font-size: 0.875rem;">90 minutes + materials</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonial Section -->
-    <section class="hide testimonial">
-        <div class="testimonial-container">
-            <blockquote>
-                "Denis saved us 8 hours per week on manual intake and scheduling. More importantly, he showed us how to think about automation strategically - not just throwing AI at every problem."
-            </blockquote>
-            <div class="testimonial-author">
-                <div class="author-info">
-                    <h4>Dr. Sarah Johnson</h4>
-                    <p>Red Bridge Occupational Therapy</p>
-                </div>
-            </div>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="section-label">About Me</div>
+            <h2>Working Side by Side</h2>
+            <p>With 25+ years in B2B SaaS and technology leadership, I've learned that the best technology solutions come from understanding your business first, then building systems that truly serve your goals.</p>
+            <p>I don't just consult from the sidelines—I work alongside you as a trusted partner, whether that's as your fractional CTO planning your tech roadmap, building custom AI solutions for your specific needs, or coaching you through the challenges of scaling a tech-enabled business.</p>
+            <p>My approach is practical, privacy-focused, and designed for sustainable growth. Every solution is built to last and scale with your business.</p>
+        </div>
+
+        <div class="about-image">
+            <!-- Replace with your actual photo -->
+            <img src="/assets/portrait.jpg" alt="Denis Daigle" onerror="this.src='https://via.placeholder.com/400x500/1e3a8a/ffffff?text=Your+Photo+Here'">
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section" id="contact">
-        <h2>Ready to Find What's Hiding in Your Business?</h2>
-        <p>I work with 2-3 clients at a time to ensure focused attention.<br>Let's see if we're a good fit.</p>
+    <section class="cta-section">
+        <h2>Ready to Scale Your Business?</h2>
+        <p>Whether you need strategic technology guidance, custom AI solutions, or leadership coaching,<br>let's discuss how we can work together to accelerate your growth.</p>
         <div class="cta-buttons">
-            <a href="mailto:denis@denisdaigle.com" class="cta-primary">Email: denis@denisdaigle.com</a>
-            <a href="https://linkedin.com/in/denisdaigle" class="cta-secondary" target="_blank">Connect on LinkedIn</a>
+            <a href="https://calendly.com/denisdaigle/30min" class="cta-primary" target="_blank">Book a Free Consultation</a>
+            <a href="mailto:denis@denisdaigle.com" class="cta-secondary">Email: denis@denisdaigle.com</a>
         </div>
     </section>
 
@@ -633,19 +646,17 @@
         <div class="footer-container">
             <div class="footer-about">
                 <h3>Denis Daigle</h3>
-                <p>Fractional CTO & AI Transformation Consultant</p>
-                <p>Based in New Brunswick, Canada<br>
-                Serving Atlantic Canada, Quebec, and remote clients nationally</p>
-                <p>Bilingual: English & French</p>
+                <p>Strategic Technology Partner for Growing Service Businesses</p>
+                <p style="margin-top: 1rem;">I help service-based businesses scale with the right technology foundation through strategic planning, AI automation, and leadership coaching.</p>
             </div>
 
             <div class="footer-links">
-                <h4>Services</h4>
+                <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#services">Fractional CTO</a></li>
-                    <li><a href="#services">AI Assessment</a></li>
-                    <li><a href="#services">Implementation</a></li>
-                    <li><a href="#services">Workshop</a></li>
+                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="https://tally.so/r/3X7a44" target="_blank">Free Assessment</a></li>
                 </ul>
             </div>
 
@@ -653,14 +664,13 @@
                 <h4>Connect</h4>
                 <ul>
                     <li><a href="mailto:denis@denisdaigle.com">Email</a></li>
-                    <li><a href="https://linkedin.com/in/denisdaigle" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://www.youtube.com/@DenisDaigle" target="_blank">YouTube</a></li>
+                    <li><a href="https://linkedin.com/in/daigledenis" target="_blank">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Denis Daigle. All rights reserved.</p>
+            <p>&copy; 2026 Denis Daigle. All rights reserved. | Based in New Brunswick, Canada | Bilingual: English & French</p>
         </div>
     </footer>
 </body>
