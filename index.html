@@ -668,6 +668,24 @@
             display: none;
         }
 
+        .bottom-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 0.8;
+        }
+
+        .bottom-logo-link {
+            color: white;
+            text-decoration: none;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero {
@@ -717,7 +735,7 @@
     <!-- Header/Navigation -->
     <header>
         <nav>
-            <div class="logo"><a href="#top" class="logo-link">Denis Daigle</a></div>
+            <div class="logo"><a href="#top" class="logo-link"><img src="/assets/favicon-dark.svg"/> Denis Daigle</a></div>
             <ul class="nav-links">
                 <li><a href="#about">People</a></li>
                 <li><a href="#process">Process</a></li>
@@ -982,6 +1000,10 @@
                     <a href="mailto:denis@denisdaigle.com" aria-label="Email">@</a>
                 </div>
             </div>
+        </div>
+
+        <div>
+            <div class="bottom-logo"><a href="#top" class="bottom-logo-link"><img src="/assets/favicon-dark.svg"/> Denis Daigle</a></div>
         </div>
 
         <div class="footer-bottom">
