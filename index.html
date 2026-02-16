@@ -196,6 +196,182 @@
             margin-bottom: 0.5rem;
         }
 
+
+        /* Process Section */
+        .process-section {
+            background: #f9fafb;
+            padding: 5rem 2rem;
+        }
+
+        .process-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .process-container .section-label {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .process-container h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .process-container .subtitle {
+            text-align: center;
+            font-size: 1.25rem;
+            color: #6b7280;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+        }
+
+        .framework-intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .framework-intro p {
+            font-size: 1.25rem;
+            color: #4b5563;
+            margin: 0;
+        }
+
+        .phases-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .phase-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .phase-highlight {
+            border: 2px solid var(--primary-blue);
+            box-shadow: 0 8px 16px rgba(44, 82, 130, 0.15);
+        }
+
+        .phase-number {
+            position: absolute;
+            top: -20px;
+            left: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .phase-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+
+        .phase-description {
+            color: #4b5563;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .phase-details {
+            margin-bottom: 1.5rem;
+        }
+
+        .phase-details h4 {
+            color: var(--primary-blue);
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .phase-details ul {
+            margin-left: 1.5rem;
+            color: #6b7280;
+        }
+
+        .phase-details li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .phase-outcome {
+            background: #dbeafe;
+            padding: 1rem;
+            border-radius: 6px;
+            color: var(--primary-blue);
+            font-size: 0.95rem;
+        }
+
+        .framework-cta {
+            background: var(--primary-blue);
+            color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .framework-cta h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .framework-cta p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .framework-cta .cta-button {
+            background: white;
+            color: var(--primary-blue);
+            display: inline-block;
+        }
+
+        .framework-cta .cta-button:hover {
+            background: #f3f4f6;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .phases-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .phase-highlight {
+                border: 2px solid var(--primary-blue);
+            }
+        }
+
         /* Case Studies Section */
         .case-studies {
             background: #f3f4f6;
@@ -581,6 +757,90 @@
                     <li>Funding and investor preparation</li>
                     <li>Ongoing accountability and support</li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section - Your 3-Phase Framework -->
+    <section class="process-section" id="process">
+        <div class="process-container">
+            <div class="section-label">THE FRAMEWORK</div>
+            <h2>Why Most AI Implementations Fail</h2>
+            <p class="subtitle">Companies skip straight to building (Phase 3) without understanding what to build or why. That's expensive trial and error.</p>
+            
+            <div class="framework-intro">
+                <p>My 3-Phase Methodology ensures you build the <strong>right automation</strong> in the <strong>right order</strong> for maximum ROI.</p>
+            </div>
+
+            <div class="phases-grid">
+                <!-- Phase 1 -->
+                <div class="phase-card">
+                    <div class="phase-number">1</div>
+                    <h3>Inside-Out: Find the Friction</h3>
+                    <p class="phase-description">I interview your team to discover where time disappears. Not where you <em>think</em> the problems are—where they <em>actually</em> are.</p>
+                    
+                    <div class="phase-details">
+                        <h4>What happens:</h4>
+                        <ul>
+                            <li>1-on-1 interviews with team members</li>
+                            <li>Shadow key workflows for a day</li>
+                            <li>Map where hours are bleeding</li>
+                            <li>Identify manual bottlenecks</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-outcome">
+                        <strong>Outcome:</strong> A clear map of where your operation is inefficient
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="phase-card phase-highlight">
+                    <div class="phase-number">2</div>
+                    <h3>Outside-In: Prioritize by Value</h3>
+                    <p class="phase-description">Not all friction costs the same. I trace your customer journey backward from payment to find what blocks revenue or burns cash.</p>
+                    
+                    <div class="phase-details">
+                        <h4>What happens:</h4>
+                        <ul>
+                            <li>Map your revenue journey</li>
+                            <li>Calculate cost of each friction point</li>
+                            <li>Rank opportunities by ROI</li>
+                            <li>Identify quick wins vs. long-term plays</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-outcome">
+                        <strong>Outcome:</strong> A prioritized roadmap of what to automate first
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="phase-card">
+                    <div class="phase-number">3</div>
+                    <h3>Middle-Out: Implement at Leverage Points</h3>
+                    <p class="phase-description">Instead of automating everything, I find the single leverage point where fixing one thing fixes five things downstream.</p>
+                    
+                    <div class="phase-details">
+                        <h4>What happens:</h4>
+                        <ul>
+                            <li>Build automation at the leverage point</li>
+                            <li>Create ripple benefits across workflows</li>
+                            <li>Train your team on the new system</li>
+                            <li>Measure actual time/cost savings</li>
+                        </ul>
+                    </div>
+
+                    <div class="phase-outcome">
+                        <strong>Outcome:</strong> One automation that solves multiple problems
+                    </div>
+                </div>
+            </div>
+
+            <div class="framework-cta">
+                <h3>The Result?</h3>
+                <p>Instead of scattering your resources across 10 small automations, you get one strategic implementation that delivers measurable ROI in weeks, not months.</p>
+                <a href="mailto:denis@denisdaigle.com?subject=Tell me about the 3-Phase Framework" class="cta-button">Let's Apply This to Your Business</a>
             </div>
         </div>
     </section>
