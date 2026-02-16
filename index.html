@@ -19,6 +19,13 @@
             color: #2d3748;
         }
 
+        /* Updated Color Scheme - Richer Blue */
+        :root {
+            --primary-blue: #2c5282;
+            --primary-blue-dark: #1e3a5f;
+            --primary-blue-light: #3c6ba6;
+        }
+
         /* Header/Navigation */
         header {
             background: white;
@@ -40,7 +47,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #1e3a8a;
+            color: var(--primary-blue);
         }
 
         .nav-links {
@@ -57,11 +64,11 @@
         }
 
         .nav-links a:hover {
-            color: #1e3a8a;
+            color: var(--primary-blue);
         }
 
         .cta-button {
-            background: #1e3a8a;
+            background: var(--primary-blue);
             color: white;
             padding: 0.75rem 1.5rem;
             border-radius: 6px;
@@ -71,7 +78,7 @@
         }
 
         .cta-button:hover {
-            background: #1e40af;
+            background: var(--primary-blue-dark);
         }
 
         /* Hero Section */
@@ -89,14 +96,14 @@
             text-transform: uppercase;
             font-size: 0.875rem;
             font-weight: 600;
-            color: #1e3a8a;
+            color: var(--primary-blue);
             letter-spacing: 1px;
             margin-bottom: 1rem;
         }
 
         .hero-content h1 {
             font-size: 3rem;
-            color: #1e3a8a;
+            color: var(--primary-blue);
             margin-bottom: 1.5rem;
             line-height: 1.2;
         }
@@ -118,62 +125,6 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
-        /* Lead Magnet Banner */
-        .lead-magnet {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
-            padding: 3rem 2rem;
-            color: white;
-            text-align: center;
-        }
-
-        .lead-magnet-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .lead-magnet h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .lead-magnet p {
-            font-size: 1.125rem;
-            margin-bottom: 0.5rem;
-            opacity: 0.95;
-        }
-
-        .lead-magnet ul {
-            list-style: none;
-            margin: 1.5rem 0;
-            display: inline-block;
-            text-align: left;
-        }
-
-        .lead-magnet li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .lead-magnet li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
-
-        .lead-magnet .cta-button {
-            background: white;
-            color: #1e3a8a;
-            padding: 1rem 2rem;
-            font-size: 1.125rem;
-            margin-top: 1rem;
-        }
-
-        .lead-magnet .cta-button:hover {
-            background: #f3f4f6;
-        }
-
         /* Three Dimensions Section */
         .three-dimensions {
             max-width: 1200px;
@@ -186,14 +137,14 @@
             text-transform: uppercase;
             font-size: 0.875rem;
             font-weight: 600;
-            color: #1e3a8a;
+            color: var(--primary-blue);
             letter-spacing: 1px;
             margin-bottom: 1rem;
         }
 
         .three-dimensions h2 {
             font-size: 2.5rem;
-            color: #1e3a8a;
+            color: var(--primary-blue);
             margin-bottom: 1rem;
         }
 
@@ -226,7 +177,7 @@
         }
 
         .dimension-card h3 {
-            color: #1e3a8a;
+            color: var(--primary-blue);
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
@@ -259,7 +210,7 @@
         .case-studies h2 {
             text-align: center;
             font-size: 2.5rem;
-            color: #1e3a8a;
+            color: var(--primary-blue);
             margin-bottom: 1rem;
         }
 
@@ -284,7 +235,7 @@
         }
 
         .case-study-card h3 {
-            color: #1e3a8a;
+            color: var(--primary-blue);
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
@@ -299,7 +250,7 @@
             background: #dbeafe;
             padding: 1rem;
             border-radius: 6px;
-            color: #1e3a8a;
+            color: var(--primary-blue);
             font-weight: 600;
             margin-top: 1rem;
         }
@@ -319,14 +270,14 @@
             text-transform: uppercase;
             font-size: 0.875rem;
             font-weight: 600;
-            color: #1e3a8a;
+            color: var(--primary-blue);
             letter-spacing: 1px;
             margin-bottom: 1rem;
         }
 
         .about h2 {
             font-size: 2.5rem;
-            color: #1e3a8a;
+            color: var(--primary-blue);
             margin-bottom: 1.5rem;
         }
 
@@ -345,7 +296,7 @@
 
         /* CTA Section */
         .cta-section {
-            background: #1e3a8a;
+            background: var(--primary-blue);
             padding: 5rem 2rem;
             color: white;
             text-align: center;
@@ -371,7 +322,7 @@
 
         .cta-primary {
             background: white;
-            color: #1e3a8a;
+            color: var(--primary-blue);
             padding: 1rem 2rem;
             border-radius: 6px;
             text-decoration: none;
@@ -384,79 +335,125 @@
             background: #f3f4f6;
         }
 
-        .cta-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-            padding: 1rem 2rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.125rem;
-            transition: all 0.3s;
-        }
-
-        .cta-secondary:hover {
-            background: white;
-            color: #1e3a8a;
-        }
-
-        /* Footer */
+        /* Footer - Like Thrive */
         footer {
-            background: #0f172a;
+            background: var(--primary-blue-dark);
             color: white;
-            padding: 3rem 2rem;
+            padding: 4rem 2rem 2rem;
         }
 
-        .footer-container {
+        .footer-main {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-columns: repeat(4, 1fr);
             gap: 3rem;
+            margin-bottom: 3rem;
         }
 
-        .footer-about h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .footer-about p {
-            opacity: 0.9;
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-links h4 {
+        .footer-column h4 {
             font-size: 1.125rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
         }
 
-        .footer-links ul {
+        .footer-column ul {
             list-style: none;
         }
 
-        .footer-links li {
-            margin-bottom: 0.5rem;
+        .footer-column li {
+            margin-bottom: 0.75rem;
         }
 
-        .footer-links a {
-            color: white;
+        .footer-column a {
+            color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .footer-column a:hover {
+            color: white;
+        }
+
+        .footer-newsletter {
+            grid-column: span 1;
+        }
+
+        .footer-newsletter p {
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .newsletter-form button {
+            background: #f59e0b;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: #d97706;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
             opacity: 0.8;
             transition: opacity 0.3s;
         }
 
-        .footer-links a:hover {
+        .social-icons a:hover {
             opacity: 1;
         }
 
         .footer-bottom {
             max-width: 1200px;
-            margin: 2rem auto 0;
+            margin: 0 auto;
             padding-top: 2rem;
             border-top: 1px solid rgba(255,255,255,0.2);
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
             opacity: 0.8;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-bottom-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        .footer-bottom-links a:hover {
+            color: white;
         }
 
         /* Responsive */
@@ -479,8 +476,23 @@
                 grid-template-columns: 1fr;
             }
 
-            .footer-container {
+            .footer-main {
                 grid-template-columns: 1fr;
+            }
+
+            .footer-newsletter {
+                grid-column: span 1;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .footer-bottom-links {
+                flex-direction: column;
+                gap: 0.5rem;
             }
 
             .nav-links {
@@ -499,7 +511,7 @@
                 <li><a href="#case-studies">Case Studies</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
-            <a href="https://tally.so/r/3X7a44" class="cta-button" target="_blank">Free Assessment</a>
+            <a href="mailto:denis@denisdaigle.com?subject=Let's discuss working together" class="cta-button">Get in Touch</a>
         </nav>
     </header>
 
@@ -509,27 +521,11 @@
             <div class="hero-label">With You All The Way</div>
             <h1>Strategic Technology Partner for Growing Service Businesses</h1>
             <p>Not just another AI Automation Agency — I work with 3-5 healthcare, finance, and legal businesses at a time as their strategic technology partner. This isn't project work. It's a 12-18 month transformation partnership, as you grow through your growth, alongside you.</p>
-            <a href="https://tally.so/r/3X7a44" class="cta-button" style="display: inline-block;" target="_blank">Get My FREE AI Opportunity Finder</a>
+            <a href="mailto:denis@denisdaigle.com?subject=I'm interested in working together" class="cta-button" style="display: inline-block;">Start a Conversation</a>
         </div>
 
         <div class="hero-image">
-            <!-- Replace with your actual headshot -->
-            <img src="/assets/portrait.jpg" alt="Denis Daigle - Strategic Technology Partner" onerror="this.src='https://via.placeholder.com/500x600/1e3a8a/ffffff?text=Your+Photo+Here'">
-        </div>
-    </section>
-
-    <!-- Lead Magnet Banner -->
-    <section class="lead-magnet">
-        <div class="lead-magnet-container">
-            <h2>Is Your Tech Strategy Holding Back Your Growth?</h2>
-            <p>Take this free 3-minute Tech Readiness Assessment to discover how aligned your business, funding, and technology really are — and what to do next.</p>
-            <ul>
-                <li>Immediate Results - Get your personalized report instantly</li>
-                <li>Actionable Insights - Clear next steps for your business</li>
-                <li>No Tech Jargon - Business-focused recommendations</li>
-            </ul>
-            <p style="font-size: 0.875rem; margin-top: 1rem;">(Only 15 questions • Takes 3 minutes • 100% free)</p>
-            <a href="https://tally.so/r/3X7a44" class="cta-button" target="_blank">Take Free Readiness Assessment</a>
+            <img src="/assets/portrait.jpg" alt="Denis Daigle - Strategic Technology Partner" onerror="this.src='https://via.placeholder.com/500x600/2c5282/ffffff?text=Your+Photo+Here'">
         </div>
     </section>
 
@@ -626,8 +622,7 @@
         </div>
 
         <div class="about-image">
-            <!-- Replace with your actual photo -->
-            <img src="/assets/portrait.jpg" alt="Denis Daigle" onerror="this.src='https://via.placeholder.com/400x500/1e3a8a/ffffff?text=Your+Photo+Here'">
+            <img src="/assets/portrait.jpg" alt="Denis Daigle" onerror="this.src='https://via.placeholder.com/400x500/2c5282/ffffff?text=Your+Photo+Here'">
         </div>
     </section>
 
@@ -636,41 +631,70 @@
         <h2>Ready to Scale Your Business?</h2>
         <p>Whether you need strategic technology guidance, custom AI solutions, or leadership coaching,<br>let's discuss how we can work together to accelerate your growth.</p>
         <div class="cta-buttons">
-            <a href="https://calendly.com/denisdaigle/30min" class="cta-primary" target="_blank">Book a Free Consultation</a>
-            <a href="mailto:denis@denisdaigle.com" class="cta-secondary">Email: denis@denisdaigle.com</a>
+            <a href="mailto:denis@denisdaigle.com?subject=I'm ready to scale my business" class="cta-primary">Email: denis@denisdaigle.com</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-about">
-                <h3>Denis Daigle</h3>
-                <p>Strategic Technology Partner for Growing Service Businesses</p>
-                <p style="margin-top: 1rem;">I help service-based businesses scale with the right technology foundation through strategic planning, AI automation, and leadership coaching.</p>
+        <div class="footer-main">
+            <!-- Column 1: Services -->
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#approach">Strategic Planning</a></li>
+                    <li><a href="#approach">Implementation Partnership</a></li>
+                    <li><a href="#approach">Leadership Development</a></li>
+                    <li><a href="#approach">Fractional CTO</a></li>
+                </ul>
             </div>
 
-            <div class="footer-links">
-                <h4>Quick Links</h4>
+            <!-- Column 2: Industries -->
+            <div class="footer-column">
+                <h4>Industries</h4>
                 <ul>
-                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="#case-studies">Healthcare</a></li>
+                    <li><a href="#case-studies">Financial Services</a></li>
+                    <li><a href="#case-studies">Legal</a></li>
+                    <li><a href="#case-studies">Professional Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: About -->
+            <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#about">About Denis</a></li>
                     <li><a href="#case-studies">Case Studies</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="https://tally.so/r/3X7a44" target="_blank">Free Assessment</a></li>
+                    <li><a href="mailto:denis@denisdaigle.com">Contact</a></li>
                 </ul>
             </div>
 
-            <div class="footer-links">
-                <h4>Connect</h4>
-                <ul>
-                    <li><a href="mailto:denis@denisdaigle.com">Email</a></li>
-                    <li><a href="https://linkedin.com/in/daigledenis" target="_blank">LinkedIn</a></li>
-                </ul>
+            <!-- Column 4: Newsletter -->
+            <div class="footer-column footer-newsletter">
+                <h4>Stay Connected</h4>
+                <p>Get insights on strategic technology for growing businesses</p>
+                <form class="newsletter-form" action="mailto:denis@denisdaigle.com" method="get">
+                    <input type="email" name="subject" placeholder="Your email" required>
+                    <button type="submit">→</button>
+                </form>
+                
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/denisdaigle" target="_blank" aria-label="LinkedIn">in</a>
+                    <a href="https://github.com/denisdaigle" target="_blank" aria-label="GitHub">gh</a>
+                    <a href="mailto:denis@denisdaigle.com" aria-label="Email">@</a>
+                </div>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Denis Daigle. All rights reserved. | v1.1 | Based in New Brunswick, Canada | Bilingual: English & French</p>
+            <div>
+                <p>&copy; 2026 Denis Daigle. All rights reserved.</p>
+            </div>
+            <div class="footer-bottom-links">
+                <span>Based in New Brunswick, Canada</span>
+                <span>Bilingual: English & French</span>
+            </div>
         </div>
     </footer>
 </body>
